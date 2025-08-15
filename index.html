@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <header>
+        <img src="img/upscalemedia-transformed-removebg-preview.png" alt="logo-pttimah" class="logo">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#our-profile">Our Profile</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#message-us">Message Us</a>
+        </nav>
+    </header>
+
+    <!-- home -->
+    <section id="home">
+        <div class="banner-wrapper">
+            <img class="home-banner" src="img/upscalemedia-transformed (1).jpeg" alt="banner">
+            <div class="banner-overlay"></div>
+            <div class="banner-text">
+                <span id="welcome-text">Selamat Datang di Website Profile PT. Timah Tbk</span>
+                <div class="banner-subtext">Temukan informasi menarik, inspirasi, dan kisah sukses bersama kami!</div>
+            </div>
+        </div>
+    </section>
+    <hr />
+    <br>
+    <!-- tentang perusahaan -->
+    <section id="about-company">
+        <h2>About Us</h2>
+        <div class="profile-container">
+            <div class="profile-photo">
+                <img src="img/sstimah.png" alt="PT Timah Tbk HQ" />
+            </div>
+            <div class="profile-info">
+                <h3>PT. Timah Tbk</h3>
+                <p>PT TIMAH Tbk merupakan produsen dan eksportir logam timah, dan memiliki segmen usaha penambangan
+                    timah terintegrasi mulai dari kegiatan eksplorasi, penambangan, pengolahan hingga pemasaran. Ruang
+                    lingkup kegiatan Perusahaan meliputi juga bidang pertambangan, perindustrian, perdagangan,
+                    pengangkutan dan jasa. Kegiatan utama perusahaan adalah sebagai perusahaan induk yang melakukan
+                    kegiatan operasi penambangan timah dan melakukan jasa pemasaran kepada kelompok usaha mereka.
+                    Perusahaan memiliki beberapa anak perusahaan yang bergerak dibidang perbengkelan dan galangan kapal,
+                    jasa rekayasa teknik, penambangan timah, jasa konsultasi dan penelitian pertambangan serta
+                    penambangan non timah.
+                </p>
+                <h4>Visi</h4>
+                <ul>
+                    <li>Menjadi perusahaan pertambangan terkemuka di dunia yang ramah lingkungan.</li>
+                </ul>
+                <h4>Misi</h4>
+                <ul>
+                    <li>Membangun sumber daya manusia yang tangguh, unggul dan bermartabat.</li>
+                    <li>Melaksanakan tata kelola penambangan yang baik dan benar.</li>
+                    <li>Mengoptimalkan nilai Perusahaan dan konstribusi terhadap pemegang saham serta tanggung jawab
+                        sosial.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <hr />
+    <!-- our profile -->
+    <section id="our-profile">
+        <h2>Our Headquarter</h2>
+        <div class="locations">
+            <div class="location-item">
+                <div class="circle">
+                    <img src="https://www.timah.com/images/struktur/kantor-pusat.jpg" alt="PT Timah Jakarta"
+                        class="branch-img" />
+                </div>
+                <div class="city-label">Jakarta</div>
+            </div>
+            <div class="location-item">
+                <div class="circle">
+                    <img src="https://www.timah.com/images/struktur/kantor-perwakilan-bandung.jpg"
+                        alt="PT Timah Bandung" class="branch-img" />
+                </div>
+                <div class="city-label">Bandung</div>
+            </div>
+            <div class="location-item">
+                <div class="circle">
+                    <img src="https://www.timah.com/images/struktur/kantor-perwakilan-surabaya.jpg"
+                        alt="PT Timah Surabaya" class="branch-img" />
+                </div>
+                <div class="city-label">Surabaya</div>
+            </div>
+        </div>
+    </section>
+
+    <hr />
+    <!-- message us -->
+    <section id="message-us">
+        <h2>Message Us</h2>
+        <div class="message-row">
+            <form id="message-form">
+                <div class="form-row">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" placeholder="Masukkan nama" required>
+                </div>
+                <div class="form-row">
+                    <label for="birthdate">Tanggal Lahir:</label>
+                    <input type="date" id="birthdate" placeholder="Tanggal lahir" required>
+                </div>
+                <div class="form-row">
+                    <label>Jenis Kelamin:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" value="Laki-Laki" required> Laki-Laki</label>
+                        <label><input type="radio" name="gender" value="Perempuan" required> Perempuan</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" placeholder="Tulis pesanmu di sini" required></textarea>
+                </div>
+                <div class="form-row">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+            <div id="result">
+                <p><strong>Current time:</strong> <span id="current-time"></span></p>
+                <p><strong>Nama:</strong> <span id="res-name"></span></p>
+                <p><strong>Tanggal Lahir:</strong> <span id="res-birthdate"></span></p>
+                <p><strong>Jenis Kelamin:</strong> <span id="res-gender"></span></p>
+                <p><strong>Pesan:</strong> <span id="res-message"></span></p>
+            </div>
+        </div>
+    </section>
+
+    <hr />
+    <footer>
+        <p>Created by Revou</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
